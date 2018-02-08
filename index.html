@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Càlcul de les quotes d'una hipoteca.</title> 
+</head>
+<body>
+    <div id="caja">
+
+        <h1> Vols calcular la quota de la teva hipoteca, aqui tens una posibilitat</h1>
+
+        <div class="container" id="container"> <!-- Aquest div el cream per colocar els inputs  -->
+            <h1>Calcular hipoteca</h1>
+            <form action="#" onsubmit="return comprovaDia()" > <!-- formulari -->
+                <div class="form-group" >
+                    <label for="data"> Data: </label>
+                    <input type="date" class="form-control" id="data"> <!--Aquest es per introduir la data-->
+                </div>
+            
+                <div class="form-group" >
+                    <label for="Capital"> Capital:</label> <!-- Quant de doblers li falten per pagar.-->
+                    <input type="number" class="form-control" id="capital" max="1000000">
+                </div>
+                <div class="form-group" >
+                    <label for="interes">Interesos de la teva hipoteca:</label> <!-- Aixo es el percentatge de interesos anual-->
+                    <input type="number"  step= ".01" class="form-control" id="interes">
+                </div>
+                <div class="form-group">
+                        <label for="plaç">En quants d'anys la vols pagar:</label> <!-- Es per controlar el maxim d'anys en que pagara la hipoteca-->
+                        <input type="number" class="form-control" id="plaç" max="40">
+                </div>
+                <div>
+                    <input type="Submit" class="btn btn-info" value="Calcular"> <!-- Per validar el formulari -->
+                </div>
+                
+            </form> 
+        </div>
+    
+        <div class= "instruccions" id="instruccions">
+            <h1>Instruccions a seguir per calcular la teva hipoteca</h1>
+            <h3>Per a la Data</h3>
+            <p>Per la data tenim que introduir una data valida, qualsevol mes pero indicant el dia 1 de cualsevol mes.</p>
+            <h3>El capital a pagar</h3>
+            <p>Aqui hem dinserir el doblers que tenim que pagar per a la nostra hipoteca.</p>
+            <h3>L'interes que tenim per a la nostra hipoteca</h3>
+            <p>Aqui posarem el percentatge d'interes que tenim amb la nostra hipoteca.</p>
+            <h3>Temps que tardarem en pagar la nostra hipoteca</h3>
+            <p>Aqui inserirem el temps que tenim per pagar la hipoteca en anys, amb un maxim de 40 anys.</p>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,28 @@
+
+
+body {
+    background-color: rgb(224, 165, 37);
+}
+
+#container{
+    background-color: #EEDFA6;
+    border-style: double;
+    width: 50%;
+    float: left;
+    padding: 1%;
+}
+
+#instruccions{
+    border-style: double;
+    width: 50%;
+    float: left;
+    background-color: bisque;
+    padding: 1%;
+}
+
+#caja{
+    padding: 2%;
+    margin: 1%;
+    height: 700px;
+    border-style: ridge;
+}
